@@ -24,7 +24,7 @@ Vous pouvez aussi modifier votre profil ou vous déconnecter via le logo d'utili
 ![image](https://user-images.githubusercontent.com/94973111/220896281-659c40b2-fff8-414a-b704-f53c39bbdbb6.png)
 
 
-##Relancer une partie sans vider son tableau des scores
+## Relancer une partie sans vider son tableau des scores
 
 Si vous souhaitez relancer une partie sans vider votre tableau des scores, vous pouvez recliquer sur les boutons lançant le jeu.
 ![image](https://user-images.githubusercontent.com/94973111/220896806-7ef14dea-27fb-44c5-a88b-4dca5bd513a4.png)
