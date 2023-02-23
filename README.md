@@ -31,7 +31,7 @@ Si vous souhaitez relancer une partie sans vider votre tableau des scores, vous 
 
 
 
-#Si vous rencontrez une erreur pour lancer le projet via le .exe
+## Si vous rencontrez une erreur pour lancer le projet via le .exe
 Dans la mesure où le .exe ne fonctionne pas il reste possible de jouer au jeu en passant par le navigateur. Pour ce faire :
 - Copiez le fichier www 
 - Collez le dans htdocs si vous avez xampp ou www si vous avez wampp
