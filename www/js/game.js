@@ -260,9 +260,9 @@ const attachEventListeners = () => {
         const eventTarget = event.target;
         const eventParent = eventTarget.parentElement;
 
-        if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {
+        if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {             //Si la carte cliquée n'est pas retournée, alors la retourner
             flipCard(eventParent);
-        } else if (eventTarget.nodeName === 'card' && !eventTarget.className.includes('disabled')) {
+        } else if (eventTarget.nodeName === 'card' && !eventTarget.className.includes('disabled')) {            //Si la carte cliquée n'a pas la classe disabled(alors elle est donc affichée) alors lancer la partie 
             startGame();
         }
     })
