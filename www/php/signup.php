@@ -40,26 +40,12 @@ if(isset($_POST['fname']) &&
             $img_ex_to_lc = strtolower($img_ex);
 
             $allowed_exs = array('jpg', 'jpeg', 'png');
-            $username = $_POST['username'];
+            $username = $_POST['uname'];
 
             if(in_array($img_ex_to_lc, $allowed_exs)){
                $new_img_name = uniqid($uname, true).'.'.$img_ex_to_lc;
                $img_upload_path = '../upload/'.$new_img_name;
                move_uploaded_file($tmp_name, $img_upload_path);
-
-               //TEST
-               // if(!isset($_FILES['pp']['name']) OR empty($_FILES['pp']['name'])) {
-               //    $default_img_name = "pdpdefault.jpg";
-               //    $img_upload_path = '../upload/'.$default_img_name;
-               
-               //    // Insert into Database       
-                 
-               // $sql = "INSERT INTO users(fname, username, password, pp) 
-               //      VALUES(?,?,?,?)";
-               //    $stmt = $conn->prepare($sql);
-               //    $stmt->execute([$fname, $uname, $pass, $default_img_name]);
-               // }
-               //TEST
 
                // Insert into Database
                $sql = "INSERT INTO users(fname, username, password, pp) 
@@ -67,7 +53,7 @@ if(isset($_POST['fname']) &&
                $stmt = $conn->prepare($sql);
                $stmt->execute([$fname, $uname, $pass, $new_img_name]);
                
-               header("Location: ../index.php?success=Votre compte à été crée !");
+              header("Location: ../index.php?success=Votre compte à été crée !");
                 exit;
 
             }else {
