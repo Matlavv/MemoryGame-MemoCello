@@ -48,19 +48,37 @@
 		    <label class="form-label">Mot de passe</label>
 		    <input type="password" 
 		           class="form-control"
-		           name="pass">
+		           name="pass"
+				   id="pass"
+				   >
+				<img src="images/oeilFerme.png" id="afficher" onclick="afficherMdp()" style='width: 50px; padding-top: 5px'>
 		  </div>
 
 		  <div class="mb-3">
 		    <label class="form-label">Photo de profil</label>
 		    <input type="file" 
 		           class="form-control"
-		           name="pp">
+		           name="pp"
+				   id="pass">
 		  </div>
 		  
 		  <button type="submit" class="btn btn-primary">Inscription</button>
 		  <a href="login.php" class="link-secondary">Connexion</a>
 		</form>
     </div>
+	<script>
+		e = true;
+		function afficherMdp() {
+			if(e) {
+				document.getElementById("pass").setAttribute("type","text");
+				document.getElementById("afficher").src="images/oeilOuvert.png";
+				e = false;
+			} else {
+				document.getElementById("pass").setAttribute("type","password");
+				document.getElementById("afficher").src="images/oeilFerme.png";
+				e = true;
+			}
+		}
+	</script>
 </body>
 </html>
