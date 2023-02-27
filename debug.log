@@ -4094,3 +4094,133 @@
 - 10:59:57.015 DEBUG: OnBrowserDestroyed()
 - 10:59:57.171 INFO: Ended application
 - 10:59:57.171 INFO: --------------------------------------------------------
+- 12:23:36.000 INFO: --------------------------------------------------------
+- 12:23:36.000 INFO: Started application
+- 12:23:36.000 INFO: Logging to: C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 12:23:36.000 INFO: Log level = DEBUG4
+- 12:23:36.000 INFO: Starting Mongoose 3.9c web server
+- 12:23:36.000 INFO: WWW directory: C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\www
+- 12:23:36.000 INFO: Index files: index.html,index.php
+- 12:23:36.000 INFO: CGI interpreter: C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 12:23:36.000 INFO: CGI pattern: **.php$
+- 12:23:36.000 INFO: Hide files patterns: 
+- 12:23:36.000 INFO: CGI environment variables set: TMP=C:\Users\mathi\AppData\Local\Temp\,TEMP=C:\Users\mathi\AppData\Local\Temp\,TMPDIR=C:\Users\mathi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 12:23:36.000 INFO: Web server url: http://127.0.0.1:52449/
+- 12:23:36.000 INFO: remote_debugging_port = 57130
+- 12:23:36.000 DEBUG: Command line string for the browser process: "C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\memoCello.exe" --no-sandbox --lang=en-US --log-file="C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=57130
+- 12:23:36.032 DEBUG: App::OnContextInitialized()
+- 12:23:36.032 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 12:23:36.032 DEBUG: Window max width/height = 1842/974
+- 12:23:36.047 DEBUG: GetBrowserWindow(): not found, hwnd = 460748
+- 12:23:36.047 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 12:23:36.047 DEBUG: BrowserWindow::CreateBrowserControl()
+- 12:23:36.047 DEBUG: StoreBrowserWindow(): hwnd = 460748
+- 12:23:36.000 DEBUG: Command line string for the gpu-process process: "C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\memoCello.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x9bc4 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.9268 --gpu-driver-date=2-5-2021 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1f95 --lang=en-US --log-file="C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=9305D577180044107D87D6A4DF676044 --mojo-platform-channel-handle=1824 /prefetch:2
+- 12:23:36.079 DEBUG: ClientHandler::OnAfterCreated()
+- 12:23:36.079 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 12:23:36.094 DEBUG: OnLoadingStateChange: loading=1, url=
+- 12:23:36.015 DEBUG: Command line string for the renderer process: "C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\memoCello.exe" --type=renderer --no-sandbox --primordial-pipe-token=A25454A89C52EF74DB37E414512F6F13 --lang=en-US --lang=en-US --log-file="C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=A25454A89C52EF74DB37E414512F6F13 --renderer-client-id=3 --mojo-platform-channel-handle=2364 /prefetch:1
+[0227/122336.149:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 12:23:36.031 DEBUG: OnBrowserCreated()
+- 12:23:37.282 INFO: GET 200 /
+- 12:23:37.282 INFO: GET 200 /css/styles.css
+- 12:23:37.172 DEBUG: OnContextCreated()
+- 12:23:37.282 INFO: GET 404 /images/oeilFerme.png
+- 12:23:37.297 INFO: GET 200 /fonts/poppins/Poppins-Regular.ttf
+- 12:23:37.297 INFO: GET 404 /css/FredokaOne-Regular.ttf
+- 12:23:37.329 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52449/
+- 12:23:49.344 DEBUG: WM_DESTROY
+- 12:23:49.344 DEBUG: RemoveBrowserWindow(): hwnd = 460748
+- 12:23:49.344 INFO: Stopping Mongoose web server
+- 12:23:49.344 DEBUG: Mongoose webserver stopped immediately
+- 12:23:49.360 DEBUG: OnBeforeClose() hwnd=1311910
+- 12:23:49.360 DEBUG: RemoveBrowserWindow(): hwnd = 1311910
+- 12:23:49.360 DEBUG: GetBrowserWindow(): not found, hwnd = 1311910
+- 12:23:49.360 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 12:23:49.360 DEBUG: Calling CefQuitMessageLoop()
+- 12:23:49.250 DEBUG: OnBrowserDestroyed()
+- 12:23:49.375 INFO: Ended application
+- 12:23:49.375 INFO: --------------------------------------------------------
+- 12:24:01.000 INFO: --------------------------------------------------------
+- 12:24:01.000 INFO: Started application
+- 12:24:01.000 INFO: Logging to: C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 12:24:01.000 INFO: Log level = DEBUG4
+- 12:24:01.000 INFO: Starting Mongoose 3.9c web server
+- 12:24:01.000 INFO: WWW directory: C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\www
+- 12:24:01.000 INFO: Index files: index.html,index.php
+- 12:24:01.000 INFO: CGI interpreter: C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 12:24:01.000 INFO: CGI pattern: **.php$
+- 12:24:01.000 INFO: Hide files patterns: 
+- 12:24:01.000 INFO: CGI environment variables set: TMP=C:\Users\mathi\AppData\Local\Temp\,TEMP=C:\Users\mathi\AppData\Local\Temp\,TMPDIR=C:\Users\mathi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 12:24:01.000 INFO: Web server url: http://127.0.0.1:52465/
+- 12:24:01.000 INFO: remote_debugging_port = 63263
+- 12:24:01.000 DEBUG: Command line string for the browser process: "C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\memoCello.exe" --no-sandbox --lang=en-US --log-file="C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=63263
+- 12:24:01.031 DEBUG: App::OnContextInitialized()
+- 12:24:01.031 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 12:24:01.031 DEBUG: Window max width/height = 1842/974
+- 12:24:01.031 DEBUG: GetBrowserWindow(): not found, hwnd = 2360562
+- 12:24:01.031 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 12:24:01.047 DEBUG: BrowserWindow::CreateBrowserControl()
+- 12:24:01.047 DEBUG: StoreBrowserWindow(): hwnd = 2360562
+- 12:24:01.015 DEBUG: Command line string for the gpu-process process: "C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\memoCello.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x9bc4 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.9268 --gpu-driver-date=2-5-2021 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1f95 --lang=en-US --log-file="C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=800BE894C782FD006FEA1BBB75533AD3 --mojo-platform-channel-handle=1840 /prefetch:2
+- 12:24:01.078 DEBUG: ClientHandler::OnAfterCreated()
+- 12:24:01.078 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 12:24:01.094 DEBUG: OnLoadingStateChange: loading=1, url=
+- 12:24:01.000 DEBUG: Command line string for the renderer process: "C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\memoCello.exe" --type=renderer --no-sandbox --primordial-pipe-token=F61A9F7B582A5210697BBF866D45F183 --lang=en-US --lang=en-US --log-file="C:\Users\mathi\Downloads\memoCello\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=F61A9F7B582A5210697BBF866D45F183 --renderer-client-id=3 --mojo-platform-channel-handle=2360 /prefetch:1
+[0227/122401.500:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 12:24:01.031 DEBUG: OnBrowserCreated()
+- 12:24:02.219 INFO: GET 200 /
+- 12:24:02.219 INFO: GET 200 /css/styles.css
+- 12:24:02.125 DEBUG: OnContextCreated()
+- 12:24:02.234 INFO: GET 200 /images/oeilFerme.png
+- 12:24:02.234 INFO: GET 200 /fonts/poppins/Poppins-Regular.ttf
+- 12:24:02.234 INFO: GET 404 /css/FredokaOne-Regular.ttf
+- 12:24:02.265 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52465/
+- 12:24:04.515 INFO: GET 200 /images/oeilOuvert.png
+- 12:24:06.750 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52465/
+- 12:24:06.828 INFO: POST 302 /php/signup.php
+- 12:24:06.781 DEBUG: OnContextCreated()
+- 12:24:06.890 INFO: GET 200 /index.php?error=Full%20name%20is%20required&fname=&uname=
+- 12:24:06.906 INFO: GET 404 /css/FredokaOne-Regular.ttf
+- 12:24:06.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52465/index.php?error=Full%20name%20is%20required&fname=&uname=
+- 12:24:09.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52465/index.php?error=Full%20name%20is%20required&fname=&uname=
+- 12:24:09.562 INFO: POST 302 /php/signup.php
+- 12:24:10.516 DEBUG: OnContextCreated()
+- 12:24:10.625 INFO: GET 200 /index.php?error=Le%20mot%20de%20passe%20doit%20contenir%20au%20moins%20une%20majuscule,%20un%20caract%C3%A8re%20sp%C3%A9cial%20et%20un%20chiffre.
+- 12:24:10.640 INFO: GET 404 /css/FredokaOne-Regular.ttf
+- 12:24:10.640 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52465/index.php?error=Le%20mot%20de%20passe%20doit%20contenir%20au%20moins%20une%20majuscule,%20un%20caract%C3%A8re%20sp%C3%A9cial%20et%20un%20chiffre.
+- 12:24:15.890 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52465/index.php?error=Le%20mot%20de%20passe%20doit%20contenir%20au%20moins%20une%20majuscule,%20un%20caract%C3%A8re%20sp%C3%A9cial%20et%20un%20chiffre.
+- 12:24:15.860 DEBUG: OnContextCreated()
+- 12:24:15.969 INFO: GET 200 /login.php
+- 12:24:15.969 INFO: GET 404 /css/FredokaOne-Regular.ttf
+- 12:24:15.984 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52465/login.php
+- 12:24:16.594 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52465/login.php
+- 12:24:17.719 INFO: GET 200 /main.html
+- 12:24:17.719 INFO: POST 302 /php/login.php
+- 12:24:17.610 DEBUG: OnContextCreated()
+- 12:24:17.719 INFO: GET 200 /vendor/bootstrap/css/bootstrap.min.css
+- 12:24:17.719 INFO: GET 200 /fonts/font-awesome-4.7.0/css/font-awesome.min.css
+- 12:24:17.719 INFO: GET 200 /vendor/animate/animate.css
+- 12:24:17.719 INFO: GET 200 /vendor/css-hamburgers/hamburgers.min.css
+- 12:24:17.719 INFO: GET 200 /vendor/select2/select2.min.css
+- 12:24:17.719 INFO: GET 200 /css/util.css
+- 12:24:17.719 INFO: GET 200 /vendor/jquery/jquery-3.2.1.min.js
+- 12:24:17.734 INFO: GET 200 /vendor/tilt/tilt.jquery.min.js
+- 12:24:17.734 INFO: GET 200 /vendor/bootstrap/js/popper.js
+- 12:24:17.734 INFO: GET 200 /vendor/bootstrap/js/bootstrap.min.js
+- 12:24:17.734 INFO: GET 200 /vendor/select2/select2.min.js
+- 12:24:17.734 INFO: GET 200 /images/logo.jpg
+- 12:24:17.734 INFO: GET 200 /images/user.png
+- 12:24:17.750 INFO: GET 200 /js/game.js
+- 12:24:17.828 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52465/main.html
+- 12:24:18.781 DEBUG: WM_DESTROY
+- 12:24:18.781 DEBUG: RemoveBrowserWindow(): hwnd = 2360562
+- 12:24:18.781 INFO: Stopping Mongoose web server
+- 12:24:18.781 DEBUG: Mongoose webserver stopped immediately
+- 12:24:18.781 DEBUG: OnBeforeClose() hwnd=1181168
+- 12:24:18.781 DEBUG: RemoveBrowserWindow(): hwnd = 1181168
+- 12:24:18.781 DEBUG: GetBrowserWindow(): not found, hwnd = 1181168
+- 12:24:18.781 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 12:24:18.781 DEBUG: Calling CefQuitMessageLoop()
+- 12:24:18.812 INFO: Ended application
+- 12:24:18.812 INFO: --------------------------------------------------------

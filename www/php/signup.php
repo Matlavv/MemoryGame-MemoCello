@@ -27,13 +27,13 @@ if(isset($_POST['fname']) &&
     }else {
 
       //verifying the password
-      if (preg_match('/[A-Z]/', $pass) && preg_match('/[0-9]/', $pass) && preg_match('/\W/', $pass)) {
-         // Le mot de passe est valide
-     } else {
-         $em = "Le mot de passe doit contenir au moins une majuscule, un caractère spécial et un chiffre.";
-         header("Location: ../index.php?error=$em");
-         exit;
-     }
+   //    if (preg_match('/[A-Z]/', $pass) && preg_match('/[0-9]/', $pass) && preg_match('/\W/', $pass)) {
+   //       // Le mot de passe est valide
+   //   } else {
+   //       $em = "Le mot de passe doit contenir au moins une majuscule, un caractère spécial et un chiffre.";
+   //       header("Location: ../index.php?error=$em");
+   //       exit;
+   //   }
       // hashing the password
       $pass = password_hash($pass, PASSWORD_DEFAULT);
 
