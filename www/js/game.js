@@ -30,12 +30,14 @@ const state = {                     //définir les états et valeurs de base afi
     totalFlips: 0,
     totalTime: 0,
     loop: null,
-    finish: false  
+    finish: false,
+    nbrCards: 0
 }
 
 const shuffle = array => {                  //fonction pour randomiser les cartes, mélanger les valeurs au sein d'un tableau
     const clonedArray = [...array];
 
+   
     for (let index = clonedArray.length - 1; index > 0; index--) {          
         const randomIndex = Math.floor(Math.random() * (index + 1));    //définir une constante qui va définir un index de tableau aléatoire
         const original = clonedArray[index];
@@ -46,7 +48,7 @@ const shuffle = array => {                  //fonction pour randomiser les carte
     return clonedArray;
 }
 
-const pickRandom = (array, items) => {                       //fonction qui va sélectionner un nombre donné d'élements dans un tableau 
+const pickRandom = (array, items) => {                       //fonction qui va sélectionner un nombre donné d'élements dans un tableau pour définir aléatoirement les index liés au emojis
     const clonedArray = [...array];         
     const randomPicks = [];                                 // pour stocker les éléments séléctionnés dans le tableau clonedArray
 
@@ -78,7 +80,7 @@ function generateGame() {                                               //géné
         btnRecommencer.classList.add('hidden');             //Pour régler le bug qui affiche le bouton recommencer au milieu de l'écran en pleine partie, ici le cacher
         state.finish = false;
     }    
-
+    state.nbrCards = 16;
     let game = document.getElementById('game');         //se placer dans la div avec comme Id game 
     game.classList.remove('hidden');
     game.classList.remove('top');
@@ -120,7 +122,7 @@ function generateGame20() {
         btnRecommencer.classList.add('hidden');
         state.finish = false;
     }    
-
+    state.nbrCards = 20;
     let game = document.getElementById('game');
     game.classList.remove('hidden');
     game.classList.remove('top');
@@ -161,7 +163,7 @@ function generateGame36() {
         btnRecommencer.classList.add('hidden');
         state.finish = false;
     }    
-    
+    state.nbrCards = 16;
     let game = document.getElementById('game');
     let HTMLcontainer = document.getElementById('container-login100');
     game.classList.remove('hidden');
@@ -188,7 +190,7 @@ function generateGame36() {
 }
 
 //& Lancer la partie 
-const startGame = () => {         
+const startGame = () => {                       //lancer la partie
     state.gameStarted = true;   //état de la partie lancé 
     state.loop = setInterval(() => {
         state.totalTime++  //lancement du Timer
@@ -249,13 +251,13 @@ const flipCard = card => {              //lorsqu'une carte est retournée
                 </div>
             `
             state.finish = true;
-            addToHistory(state.totalFlips, state.totalTime);  //Ajouter dans la liste des scores les résultats 
+            addToHistory(state.totalFlips, state.totalTime, state.nbrCards);  //Ajouter dans la liste des scores les résultats 
             clearInterval(state.loop)
         }, 1000)
     }
 } 
 
-const attachEventListeners = () => {
+const attachEventListeners = () => {                        //gérer des bugs probables
     document.addEventListener('click', event => {
         const eventTarget = event.target;
         const eventParent = eventTarget.parentElement;
@@ -274,18 +276,18 @@ attachEventListeners()
 
 const gameHistory = [];         //stocker les résultats dans un tableau 
 
-const addToHistory = (totalFlips, totalTime) => {
-    if (gameHistory.length >= 5) {              //Afficher que les 5 dernières parties donc si il dépasse remplacer 
+const addToHistory = (totalFlips, totalTime, nbrCards) => {
+    if (gameHistory.length >= 7) {              //Afficher que les 7 dernières parties donc si il dépasse remplacer 
         gameHistory.shift();                    //Remplacer la première ligne du tableau
     }
-    gameHistory.push({ totalFlips, totalTime });            //Ajouter le nombre de coups et le temps au tableau
+    gameHistory.push({ totalFlips, totalTime, nbrCards });            //Ajouter le nombre de coups et le temps au tableau
     displayHistory();                   //appeler la fonction qui affiche le tableau dans le HTML
 };
 
 const displayHistory = () => {
     let historyList = "";
     for (let i = 0; i < gameHistory.length; i++) {        //Afficher pour chaque partie finie la liste 
-        historyList += "<li class='score'>Coups : " + gameHistory[i].totalFlips + " en " + gameHistory[i].totalTime + " secondes</li>";
+        historyList += "<li class='score'> " + gameHistory[i].nbrCards + " cartes : coups : " + gameHistory[i].totalFlips + " en " + gameHistory[i].totalTime + " secondes</li>";
     }
     document.getElementById("history").innerHTML = historyList;   //Afficher dans le HTML
 };
